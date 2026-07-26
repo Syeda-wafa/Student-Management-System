@@ -1,0 +1,10 @@
+.login,
+.register,
+.dashboard,
+.courses,
+.add-course,
+.edit-course,
+.profile,
+.not-found {
+  min-height: 100vh;
+}

@@ -1,0 +1,198 @@
+.edit-course-page{
+    display:flex;
+    min-height:100vh;
+    background:#0f172a;
+}
+
+.edit-course-content{
+    flex:1;
+    margin-left:260px;
+    padding:35px;
+}
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.page-header h1{
+    font-size:36px;
+}
+
+.page-header p{
+    color:#94a3b8;
+    margin-top:8px;
+}
+
+.back-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#334155;
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#475569;
+}
+
+.course-form{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+
+    background:#1e293b;
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea{
+    background:#0f172a;
+    color:white;
+
+    border:1px solid #334155;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    font-size:15px;
+}
+
+textarea{
+    resize:none;
+}
+
+.full-width{
+    grid-column:1/-1;
+}
+
+.image-preview{
+    margin-bottom:20px;
+}
+
+.image-preview img{
+    width:100%;
+    border-radius:15px;
+}
+
+.upload-box{
+    position:relative;
+
+    background:#0f172a;
+
+    border:2px dashed #3b82f6;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    text-align:center;
+}
+
+.upload-box svg{
+    font-size:40px;
+    color:#3b82f6;
+    margin-bottom:15px;
+}
+
+.upload-box input{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    cursor:pointer;
+}
+
+.button-group{
+    grid-column:1/-1;
+
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+
+.update-btn,
+.delete-btn{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.update-btn{
+    background:#3b82f6;
+}
+
+.update-btn:hover{
+    background:#2563eb;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+@media(max-width:992px){
+
+.edit-course-content{
+    margin-left:0;
+    padding:25px;
+}
+
+.course-form{
+    grid-template-columns:1fr;
+}
+
+.page-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.button-group{
+    flex-direction:column;
+}
+
+.update-btn,
+.delete-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}

@@ -1,0 +1,233 @@
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+    padding:20px;
+}
+
+
+
+/* Modal */
+
+.course-modal{
+
+    width:430px;
+
+    max-width:100%;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border:1px solid #334155;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+.course-modal h2{
+
+    margin:0 0 25px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:24px;
+
+}
+
+
+
+/* Form */
+
+.course-modal form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+
+/* Inputs */
+
+.course-modal input,
+.course-modal textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#334155;
+
+    color:white;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+}
+
+
+
+.course-modal input::placeholder,
+.course-modal textarea::placeholder{
+
+    color:#94a3b8;
+
+}
+
+
+
+.course-modal input:focus,
+.course-modal textarea:focus{
+
+    border:1px solid #3b82f6;
+
+}
+
+
+
+/* Textarea */
+
+.course-modal textarea{
+
+    min-height:100px;
+
+    resize:none;
+
+    font-family:inherit;
+
+}
+
+
+
+/* Buttons */
+
+.modal-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+
+
+.cancel-btn,
+.save-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.cancel-btn{
+
+    background:#64748b;
+
+}
+
+
+
+.cancel-btn:hover{
+
+    background:#475569;
+
+}
+
+
+
+.save-btn{
+
+    background:#2563eb;
+
+}
+
+
+
+.save-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:500px){
+
+
+    .course-modal{
+
+        padding:20px;
+
+    }
+
+
+    .course-modal h2{
+
+        font-size:20px;
+
+    }
+
+
+    .modal-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .cancel-btn,
+    .save-btn{
+
+        width:100%;
+
+    }
+
+}
